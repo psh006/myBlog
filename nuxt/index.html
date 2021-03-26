@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>VUE服务端渲染(Nuxt.js) | 彭思晗</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/myBlog/assets/css/0.styles.05cafef0.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.8b8aefe2.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.673b00d9.js" as="script"><link rel="preload" href="/myBlog/assets/js/18.f32964fd.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.e68835e0.js"><link rel="prefetch" href="/myBlog/assets/js/11.6dff8a92.js"><link rel="prefetch" href="/myBlog/assets/js/12.8aa763ee.js"><link rel="prefetch" href="/myBlog/assets/js/13.7eaae72f.js"><link rel="prefetch" href="/myBlog/assets/js/14.7be87e91.js"><link rel="prefetch" href="/myBlog/assets/js/15.b6fe7188.js"><link rel="prefetch" href="/myBlog/assets/js/16.55f660e7.js"><link rel="prefetch" href="/myBlog/assets/js/17.d697bbcf.js"><link rel="prefetch" href="/myBlog/assets/js/19.6db2ce0f.js"><link rel="prefetch" href="/myBlog/assets/js/20.7f40eb2d.js"><link rel="prefetch" href="/myBlog/assets/js/21.4712fba9.js"><link rel="prefetch" href="/myBlog/assets/js/22.8b0dca00.js"><link rel="prefetch" href="/myBlog/assets/js/23.91180243.js"><link rel="prefetch" href="/myBlog/assets/js/24.f14ea742.js"><link rel="prefetch" href="/myBlog/assets/js/25.d56f3886.js"><link rel="prefetch" href="/myBlog/assets/js/26.fcb0eeae.js"><link rel="prefetch" href="/myBlog/assets/js/27.84681865.js"><link rel="prefetch" href="/myBlog/assets/js/28.be445020.js"><link rel="prefetch" href="/myBlog/assets/js/29.cfd9efd6.js"><link rel="prefetch" href="/myBlog/assets/js/3.3b4bc5a5.js"><link rel="prefetch" href="/myBlog/assets/js/30.1d609a64.js"><link rel="prefetch" href="/myBlog/assets/js/31.758bd043.js"><link rel="prefetch" href="/myBlog/assets/js/32.32d0d2a6.js"><link rel="prefetch" href="/myBlog/assets/js/33.03ad6355.js"><link rel="prefetch" href="/myBlog/assets/js/4.c120d4ba.js"><link rel="prefetch" href="/myBlog/assets/js/5.1bbd6bae.js"><link rel="prefetch" href="/myBlog/assets/js/6.ac012c03.js"><link rel="prefetch" href="/myBlog/assets/js/7.b0bd7df1.js"><link rel="prefetch" href="/myBlog/assets/js/8.7171dfea.js"><link rel="prefetch" href="/myBlog/assets/js/9.2edf965f.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.05cafef0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/myBlog/" class="router-link-active no-logo home-link"><!----> <span class="site-name">彭思晗</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/myBlog/" class="router-link-active">
+          主页
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-selected"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          笔记
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><div><div class="ads"><div id="ads_2"><div class="ant-carousel"><div class="slick-slider slick-initialized"><div class="slick-list"><div class="slick-track"><div tabIndex="-1" data-index="-1" aria-hidden="true" class="slick-slide slick-cloned" style="width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2447805295,2155293851&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="0" class="slick-slide slick-active slick-current" style="outline:none;width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a href="" target="_blank" rel="noopener noreferrer"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1647989344,3764320512&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="1" aria-hidden="true" class="slick-slide" style="outline:none;width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2620786675,1762683576&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="2" aria-hidden="true" class="slick-slide" style="outline:none;width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2447805295,2155293851&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="3" aria-hidden="true" class="slick-slide slick-cloned" style="width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a href="" target="_blank" rel="noopener noreferrer"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1647989344,3764320512&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="4" aria-hidden="true" class="slick-slide slick-cloned" style="width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2620786675,1762683576&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="5" aria-hidden="true" class="slick-slide slick-cloned" style="width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2447805295,2155293851&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div></div></div><ul class="slick-dots slick-dots-bottom" style="display:block;"><li class="slick-active"><button>1</button></li><li><button>2</button></li><li><button>3</button></li></ul></div></div></div></div> <div role="separator" id="reset-margin" class="ant-divider ant-divider-horizontal ant-divider-dashed"></div></div> <ul class="sidebar-links"><li><a href="/myBlog/nuxt/" aria-current="page" title="VUE服务端渲染(Nuxt.js)" class="active sidebar-link">VUE服务端渲染(Nuxt.js)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/nuxt/#搭建前准备" title="搭建前准备" class="sidebar-link">搭建前准备</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/nuxt/#查看node-js环境" title="查看node.js环境" class="sidebar-link">查看node.js环境</a></li><li class="sidebar-sub-header"><a href="/myBlog/nuxt/#查看vue脚手架版本" title="查看vue脚手架版本" class="sidebar-link">查看vue脚手架版本</a></li></ul></li><li class="sidebar-sub-header"><a href="/myBlog/nuxt/#准备nuxt脚手架" title="准备Nuxt脚手架" class="sidebar-link">准备Nuxt脚手架</a></li><li class="sidebar-sub-header"><a href="/myBlog/nuxt/#cmd-进入想要搭建nuxt-js项目的目录下-执行以下命令" title="cmd 进入想要搭建Nuxt.js项目的目录下,执行以下命令" class="sidebar-link">cmd 进入想要搭建Nuxt.js项目的目录下,执行以下命令</a></li></ul></li><li><a href="/myBlog/nuxt/bulid-nuxt.html" title="Nuxt" class="sidebar-link">Nuxt</a></li></ul></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="vue服务端渲染-nuxt-js"><a href="#vue服务端渲染-nuxt-js" class="header-anchor">#</a> VUE服务端渲染(Nuxt.js)</h1> <h2 id="搭建前准备"><a href="#搭建前准备" class="header-anchor">#</a> 搭建前准备</h2> <h3 id="查看node-js环境"><a href="#查看node-js环境" class="header-anchor">#</a> 查看node.js环境</h3> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\Admin&gt;node -v
+v12.16.1
+</code></pre></div><p>如果没有node.js环境,安装node.js,参考<a href="https://www.jianshu.com/p/957f5631faa9" target="_blank" rel="noopener noreferrer">这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="查看vue脚手架版本"><a href="#查看vue脚手架版本" class="header-anchor">#</a> 查看vue脚手架版本</h3> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\Admin&gt;vue -V
+@vue/cli 4.2.3
+</code></pre></div><p>如果vue脚手架低于3.0.0,应该删除当前版本,安装最新版本</p> <div class="language- extra-class"><pre class="language-text"><code>npm uninstall vue-cli -g
+npm install -g @vue/cli
+</code></pre></div><p>如果没有安装过vue脚手架,直接安装最新版本</p> <div class="language- extra-class"><pre class="language-text"><code>npm install -g @vue/cli
+</code></pre></div><h2 id="准备nuxt脚手架"><a href="#准备nuxt脚手架" class="header-anchor">#</a> 准备Nuxt脚手架</h2> <p>Nuxt.js 十分简单易用。一个简单的项目只需将 nuxt 添加为依赖组件即可。
+为了快速入门，Nuxt.js 团队创建了脚手架工具 create-nuxt-app（确保安装了 npx（npx 在 NPM 版本 5.2.0 默认安装了））。
+全局安装create-nuxt-app脚手架,在cmd窗口中输入以下命令</p> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\Admin&gt;npm i -g create-nuxt-app
+</code></pre></div><h2 id="cmd-进入想要搭建nuxt-js项目的目录下-执行以下命令"><a href="#cmd-进入想要搭建nuxt-js项目的目录下-执行以下命令" class="header-anchor">#</a> cmd 进入想要搭建Nuxt.js项目的目录下,执行以下命令</h2> <div class="language- extra-class"><pre class="language-text"><code>PS D:\psh-workspace&gt; npx create-nuxt-app nuxtdmo
+</code></pre></div><p>回车,出现以下选择,选择JavaScript作为编程语言</p> <div class="language- extra-class"><pre class="language-text"><code>? Programming language: (Use arrow keys)
+&gt; JavaScript
+  TypeScript
+</code></pre></div><p>回车,出现以下选择,选择Npm作为包管理工具</p> <div class="language- extra-class"><pre class="language-text"><code>? Package manager:
+  Yarn
+&gt; Npm                                                                                                                  
+</code></pre></div><p>回车,出现以下选择,选择Element作为UI框架</p> <div class="language- extra-class"><pre class="language-text"><code>? UI framework:
+  None
+  Ant Design Vue
+  Bootstrap Vue
+  Buefy
+  Bulma
+  Chakra UI
+&gt; Element
+  Framevuerk
+  iView
+  Tachyons
+  Tailwind CSS
+  Vuesax
+  Vuetify.js                                                                                                            
+</code></pre></div><p>回车,出现以下选择,选择Express作为本地的服务端框架</p> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div><p>回车,出现以下选择,选择Axios作为Nuxt.js模块
+注意:需要通过按空格键才会选中期望值,此时括号中会出现星号,然后按下回车键进行确认即可</p> <div class="language- extra-class"><pre class="language-text"><code>? Nuxt.js modules:
+&gt;(*) Axios
+ ( ) Progressive Web App (PWA)
+ ( ) Content                                                                                                                            
+</code></pre></div><p>回车,出现以下选择,选择ESLint工具作为代码规范检查工具</p> <div class="language- extra-class"><pre class="language-text"><code>? Linting tools:
+&gt;(*) ESLint
+ ( ) Prettier
+ ( ) Lint staged files
+ ( ) StyleLint
+ ( ) Commitlint    
+</code></pre></div><p>回车，出现以下选择,选择Jest作为测试框架</p> <div class="language- extra-class"><pre class="language-text"><code>? Testing framework:
+  None
+&gt; Jest
+  AVA
+  WebdriverIO                                                                                                                             
+</code></pre></div><p>回车,出现以下选择,选择渲染模式为Universal (SSR / SSG)适合在客户端渲染</p> <div class="language- extra-class"><pre class="language-text"><code>? Rendering mode: (Use arrow keys)
+&gt; Universal (SSR / SSG)
+  Single Page App                                                                                                                           
+</code></pre></div><p>回车,出现以下选择,选择jsconfig.json作为开发配置文件</p> <div class="language- extra-class"><pre class="language-text"><code>? Development tools:
+&gt;(*) jsconfig.json (Recommended for VS Code if you're not using typescript)
+ ( ) Semantic Pull Requests
+ ( ) Dependabot (For auto-updating dependencies, GitHub only) 
+</code></pre></div><p>回车之后,出现以下情况,说明Nuxt.js项目已经创建成功</p> <div class="language- extra-class"><pre class="language-text"><code>
+🎉  Successfully created project nuxtdmo
+
+  To get started:
+
+        cd nuxtdmo
+        npm run dev
+
+  To build &amp; start for production:
+
+        cd nuxtdmo
+        npm run build
+        npm run start
+
+  To test:
+
+        cd nuxtdmo
+        npm run test
+
+PS D:\psh-workspace&gt;                                                                                                                              
+</code></pre></div><p>完成之后,将自动生成以下项目目录</p> <div class="language- extra-class"><pre class="language-text"><code>|-- .nuxt                    // Nuxt自动生成，临时的用于编辑的文件，build
+|-- assets                   // 用于组织未编译的静态资源入LESS、SASS 或 JavaScript
+|-- components               // 用于自己编写的Vue组件，比如滚动组件，日历组件，分页组件
+|-- layouts                  // 布局目录，用于组织应用的布局组件，不可更改。
+|-- middleware               // 用于存放中间件
+|-- pages                    // 用于存放写的页面，我们主要的工作区域
+|-- plugins                  // 用于存放JavaScript插件的地方
+|-- static                   // 用于存放静态资源文件，比如图片
+|-- store                    // 用于组织应用的Vuex 状态管理。
+|-- .editorconfig            // 开发工具格式配置
+|-- .eslintrc.js             // ESLint的配置文件，用于检查代码格式
+|-- .gitignore               // 配置git不上传的文件
+|-- nuxt.config.json         // 用于组织Nuxt.js应用的个性化配置，已覆盖默认配置
+|-- package-lock.json        // npm自动生成，用于帮助package的统一性设置的，yarn也有相同的操作
+|-- package-lock.json        // npm自动生成，用于帮助package的统一性设置的，yarn也有相同的操作
+|-- package.json             // npm包管理配置文件
+</code></pre></div><p>方便之后写样式,安装一个less,cd 进入项目目录,输入以下命令</p> <div class="language- extra-class"><pre class="language-text"><code>PS D:\psh-workspace\nuxtdmo&gt; npm install less less-loader --save-dev  
+</code></pre></div><p>运行项目</p> <div class="language- extra-class"><pre class="language-text"><code>PS D:\psh-workspace\nuxtdmo&gt; npm run dev     
+</code></pre></div><p>出现以下情况，说明Nuxt项目搭建完成，并且运行起来了</p> <div class="language- extra-class"><pre class="language-text"><code>√ Client
+  Compiled successfully in 14.12s
+
+√ Server
+  Compiled successfully in 12.68s
+
+i Waiting for file changes                                                                                   
+i Memory usage: 377 MB (RSS: 467 MB)                                                                          
+i Listening on: http://localhost:3000/                                                                      
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/7/2020, 3:08:21 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/myBlog/nuxt/bulid-nuxt.html">
+        Nuxt
+        <i aria-label="icon: right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg></i></a></span></p></div> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.8b8aefe2.js" defer></script><script src="/myBlog/assets/js/2.673b00d9.js" defer></script><script src="/myBlog/assets/js/18.f32964fd.js" defer></script>
+  </body>
+</html>

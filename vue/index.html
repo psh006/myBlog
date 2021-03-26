@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>搭建 Vue项目 | 彭思晗</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/myBlog/assets/css/0.styles.05cafef0.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.8b8aefe2.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.673b00d9.js" as="script"><link rel="preload" href="/myBlog/assets/js/24.f14ea742.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.e68835e0.js"><link rel="prefetch" href="/myBlog/assets/js/11.6dff8a92.js"><link rel="prefetch" href="/myBlog/assets/js/12.8aa763ee.js"><link rel="prefetch" href="/myBlog/assets/js/13.7eaae72f.js"><link rel="prefetch" href="/myBlog/assets/js/14.7be87e91.js"><link rel="prefetch" href="/myBlog/assets/js/15.b6fe7188.js"><link rel="prefetch" href="/myBlog/assets/js/16.55f660e7.js"><link rel="prefetch" href="/myBlog/assets/js/17.d697bbcf.js"><link rel="prefetch" href="/myBlog/assets/js/18.f32964fd.js"><link rel="prefetch" href="/myBlog/assets/js/19.6db2ce0f.js"><link rel="prefetch" href="/myBlog/assets/js/20.7f40eb2d.js"><link rel="prefetch" href="/myBlog/assets/js/21.4712fba9.js"><link rel="prefetch" href="/myBlog/assets/js/22.8b0dca00.js"><link rel="prefetch" href="/myBlog/assets/js/23.91180243.js"><link rel="prefetch" href="/myBlog/assets/js/25.d56f3886.js"><link rel="prefetch" href="/myBlog/assets/js/26.fcb0eeae.js"><link rel="prefetch" href="/myBlog/assets/js/27.84681865.js"><link rel="prefetch" href="/myBlog/assets/js/28.be445020.js"><link rel="prefetch" href="/myBlog/assets/js/29.cfd9efd6.js"><link rel="prefetch" href="/myBlog/assets/js/3.3b4bc5a5.js"><link rel="prefetch" href="/myBlog/assets/js/30.1d609a64.js"><link rel="prefetch" href="/myBlog/assets/js/31.758bd043.js"><link rel="prefetch" href="/myBlog/assets/js/32.32d0d2a6.js"><link rel="prefetch" href="/myBlog/assets/js/33.03ad6355.js"><link rel="prefetch" href="/myBlog/assets/js/4.c120d4ba.js"><link rel="prefetch" href="/myBlog/assets/js/5.1bbd6bae.js"><link rel="prefetch" href="/myBlog/assets/js/6.ac012c03.js"><link rel="prefetch" href="/myBlog/assets/js/7.b0bd7df1.js"><link rel="prefetch" href="/myBlog/assets/js/8.7171dfea.js"><link rel="prefetch" href="/myBlog/assets/js/9.2edf965f.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.05cafef0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/myBlog/" class="router-link-active no-logo home-link"><!----> <span class="site-name">彭思晗</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/myBlog/" class="router-link-active">
+          主页
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-selected"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          笔记
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><div><div class="ads"><div id="ads_2"><div class="ant-carousel"><div class="slick-slider slick-initialized"><div class="slick-list"><div class="slick-track"><div tabIndex="-1" data-index="-1" aria-hidden="true" class="slick-slide slick-cloned" style="width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2447805295,2155293851&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="0" class="slick-slide slick-active slick-current" style="outline:none;width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a href="" target="_blank" rel="noopener noreferrer"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1647989344,3764320512&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="1" aria-hidden="true" class="slick-slide" style="outline:none;width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2620786675,1762683576&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="2" aria-hidden="true" class="slick-slide" style="outline:none;width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2447805295,2155293851&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="3" aria-hidden="true" class="slick-slide slick-cloned" style="width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a href="" target="_blank" rel="noopener noreferrer"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1647989344,3764320512&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="4" aria-hidden="true" class="slick-slide slick-cloned" style="width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2620786675,1762683576&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div><div tabIndex="-1" data-index="5" aria-hidden="true" class="slick-slide slick-cloned" style="width:null;"><div><div tabIndex="-1" style="width:100%;display:inline-block;"><a target="_blank" rel="noopener noreferrer"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2447805295,2155293851&amp;fm=26&amp;gp=0.jpg" title="小小狗"></a></div></div></div></div></div><ul class="slick-dots slick-dots-bottom" style="display:block;"><li class="slick-active"><button>1</button></li><li><button>2</button></li><li><button>3</button></li></ul></div></div></div></div> <div role="separator" id="reset-margin" class="ant-divider ant-divider-horizontal ant-divider-dashed"></div></div> <ul class="sidebar-links"><li><a href="/myBlog/vue/" aria-current="page" title="搭建 Vue项目" class="active sidebar-link">搭建 Vue项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/vue/#搭建前准备" title="搭建前准备" class="sidebar-link">搭建前准备</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/vue/#查看node-js环境" title="查看node.js环境" class="sidebar-link">查看node.js环境</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue/#查看vue脚手架版本" title="查看vue脚手架版本" class="sidebar-link">查看vue脚手架版本</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue/#搭建项目" title="搭建项目" class="sidebar-link">搭建项目</a></li></ul></li></ul></li><li><a href="/myBlog/vue/bulid-vue2.html" title="vue核心配置 vue-cli 3+" class="sidebar-link">vue核心配置 vue-cli 3+</a></li><li><a href="/myBlog/vue/encapsulation-request.html" title="封装一个请求" class="sidebar-link">封装一个请求</a></li><li><a href="/myBlog/vue/work-problem-solve-mehod.html" title="项目中遇到的问题解决方法" class="sidebar-link">项目中遇到的问题解决方法</a></li><li><a href="/myBlog/vue/component.html" title="封装组件" class="sidebar-link">封装组件</a></li></ul></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="搭建-vue项目"><a href="#搭建-vue项目" class="header-anchor">#</a> 搭建 Vue项目</h1> <h2 id="搭建前准备"><a href="#搭建前准备" class="header-anchor">#</a> 搭建前准备</h2> <h3 id="查看node-js环境"><a href="#查看node-js环境" class="header-anchor">#</a> 查看node.js环境</h3> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\Admin&gt;node -v
+v12.16.1
+</code></pre></div><p>如果没有node.js环境,安装node.js,参考<a href="https://www.jianshu.com/p/957f5631faa9" target="_blank" rel="noopener noreferrer">这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="查看vue脚手架版本"><a href="#查看vue脚手架版本" class="header-anchor">#</a> 查看vue脚手架版本</h3> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\Admin&gt;vue -V
+@vue/cli 4.2.3
+</code></pre></div><p>如果vue脚手架低于3.0.0,应该删除当前版本,安装最新版本</p> <div class="language- extra-class"><pre class="language-text"><code>npm uninstall vue-cli -g
+npm install -g @vue/cli
+</code></pre></div><p>如果没有安装过vue脚手架,直接安装最新版本</p> <div class="language- extra-class"><pre class="language-text"><code>npm install -g @vue/cli
+</code></pre></div><h3 id="搭建项目"><a href="#搭建项目" class="header-anchor">#</a> 搭建项目</h3> <p>cmd 进入想要搭建项目的目录下,执行以下命令</p> <div class="language- extra-class"><pre class="language-text"><code>D:\psh-workspace&gt;vue create myvuedemo
+</code></pre></div><p>出现以下选择,按上下键进行选择,defaults,是默认配置,此时选择第二选项(Manually...),选择完成后,回车</p> <div class="language- extra-class"><pre class="language-text"><code>? Please pick a preset: (Use arrow keys)
+&gt; default (babel, eslint)
+  Manually select features    
+</code></pre></div><p>回车后,出现以下选择,在默认的基础上,再选择上 <code>Router,Vuex,CSS,pre-processors</code></p> <div class="language- extra-class"><pre class="language-text"><code>? Please pick a preset: Manually select features
+? Check the features needed for your project:
+ (*) Babel
+ ( ) TypeScript
+ ( ) Progressive Web App (PWA) Support
+ (*) Router
+ (*) Vuex
+ (*) CSS Pre-processors
+&gt;(*) Linter / Formatter
+ ( ) Unit Testing
+ ( ) E2E Testing                                                                                                                                    
+</code></pre></div><p>回车后,将出现以下选项,这是问要不要启用history模式,可能会牵扯到项目的发布,一般在创建项目时，不会选择启用该
+模式,根据情况在之后的项目中，再进行配置</p> <div class="language- extra-class"><pre class="language-text"><code>? Please pick a preset: Manually select features
+? Check the features needed for your project: Babel, Router, Vuex, CSS Pre-processors, Linter
+? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) 
+</code></pre></div><p>输入 <code>n</code> 回车,出现以下选择,这是选择使用哪种样式预编译语言,选择Less</p> <div class="language- extra-class"><pre class="language-text"><code>? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): (Use arrow keys)
+&gt; Sass/SCSS (with dart-sass)
+  Sass/SCSS (with node-sass)
+  Less
+  Stylus  
+</code></pre></div><p>回车后,出现以下选择，这是与检查代码规范有关,选择第一个</p> <div class="language- extra-class"><pre class="language-text"><code>? Pick a linter / formatter config:
+&gt; ESLint with error prevention only
+  ESLint + Airbnb config
+  ESLint + Standard config
+  ESLint + Prettier                                                                                                                             
+</code></pre></div><p>回车后,出现以下选择,这个与git有关,选择第一个</p> <div class="language- extra-class"><pre class="language-text"><code>? Pick additional lint features: (Press &lt;space&gt; to select, &lt;a&gt; to toggle all, &lt;i&gt; to invert selection)
+&gt;(*) Lint on save
+ ( ) Lint and fix on commit   
+</code></pre></div><p>回车后，出现以下选择，只是与配置有关,选择第一个</p> <div class="language- extra-class"><pre class="language-text"><code>? Where do you prefer placing config for Babel, ESLint, etc.? (Use arrow keys)
+&gt; In dedicated config files
+  In package.json   
+</code></pre></div><p>回车后,会出现以下选择，这是问是否保留本次选择,保留后在下一次创建项目时就可以直接使用本次选择</p> <div class="language- extra-class"><pre class="language-text"><code>? Save this as a preset for future projects? (y/N)    
+</code></pre></div><p>输入 <code>y</code> 回车，会选择要保存到哪里,输入一个想要保存的位置,比如</p> <div class="language- extra-class"><pre class="language-text"><code>? Save preset as:   ? Save preset as: D:\psh-workspace\vueconfitg 
+</code></pre></div><p>回车,然后等待项目创建完成</p> <div class="language- extra-class"><pre class="language-text"><code>⚓  Running completion hooks...
+
+📄  Generating README.md...
+
+🎉  Successfully created project myvuedemo.
+👉  Get started with the following commands:
+
+ $ cd myvuedemo
+ $ npm run serve
+</code></pre></div><p>按照提示,执行命令</p> <div class="language- extra-class"><pre class="language-text"><code>D:\psh-workspace&gt;cd myvuedemo
+D:\psh-workspace\myvuedemo&gt;npm run serve
+</code></pre></div><p>出现以下情况，说明vue项目搭建完成，并且运行起来了,之后对项目进行一些配置和修改即可。。。。。</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; myvuedemo@0.1.0 serve D:\psh-workspace\myvuedemo
+&gt; vue-cli-service serve
+
+ INFO  Starting development server...
+98% after emitting CopyPlugin
+
+ DONE  Compiled successfully in 1768ms                                                                        
+
+__
+  App running at:
+  - Local:   http://localhost:8082/
+  - Network: http://10.168.1.138:8082/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/7/2020, 3:08:21 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/myBlog/vue/bulid-vue2.html">
+        vue核心配置 vue-cli 3+
+        <i aria-label="icon: right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg></i></a></span></p></div> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.8b8aefe2.js" defer></script><script src="/myBlog/assets/js/2.673b00d9.js" defer></script><script src="/myBlog/assets/js/24.f14ea742.js" defer></script>
+  </body>
+</html>
